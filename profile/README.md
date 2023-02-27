@@ -8,8 +8,8 @@ RWD2E (Real World Data To Evidence) is a open research group focusing on data-ce
 - (L) only use Lower case;
 - (O) elements should be Ordered from general to specific detail of importance as much as possible;
 - (A) Abbreviate the content of elements whenever possible;
-- (D) use the underscore (_) as element Delimiter; use the hyphen (-) to Delimit words within an element or capitalize the first letter of each word within an element;
-- (S) Start with a noun for cohort identification scripts (often in .sql); Start with a verb such as for analytic scripts (often in .R, .py)
+- (D) use the underscore (_) as element Delimiter, hyphen (-) to Delimit words within an element or capitalize the first letter of each word within an element;
+- (S) Start with a `noun` for cohort identification scripts (e.g., als-case.sql), start with a verb for analytic scripts (e.g., extract.R)
 
 ***********************************************************************
 
@@ -64,7 +64,7 @@ Please follow the git collaboration best practice described below to manage your
 4. Please refer to the git command order below to properly exercise version controls in a collaborative setting in different scenarios: 
 
 ## When you begin coding for a project   
-![git-workflow-start-project](res/img/git-workflow-start-project.png)
+![git-workflow-start-project](res/img//git-workflow-start-project.png)
 
 ## When you continue coding after taking a break
 ![git-workflow-continue-project](res/img/git-workflow-continue-project.png)
