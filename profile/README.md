@@ -5,20 +5,20 @@ RWD2E (Real World Data To Evidence) is a open research group focusing on data-ce
 ***********************************************************************
 
 # Consistent Naming Convention
-- (L) only use <l>L</l>ower case;
-- (O) elements should be Ordered from general to specific detail of importance as much as possible;
-- (A) Abbreviate the content of elements whenever possible;
-- (D) use the underscore (_) as element Delimiter, hyphen (-) to Delimit words within an element or capitalize the first letter of each word within an element (only when hyphen is not allowed);
-- (S) Start with a `noun` for cohort identification scripts (e.g., als-case.sql), start with a verb for analytic scripts (e.g., extract.R)
+- (L) only use `L` ower case;
+- (O) elements should be `O`rdered from general to specific detail of importance as much as possible;
+- (A) `A`bbreviate the content of elements whenever possible;
+- (D) use the underscore (_) as element `D`elimiter, hyphen (-) to `D`elimit words within an element or capitalize the first letter of each word within an element (only when hyphen is not allowed);
+- (S) `S`tart with a `noun` for cohort identification scripts (e.g., als-case.sql), start with a verb for analytic scripts (e.g., extract.R)
 
 ***********************************************************************
 
 # Best Practices for Repositories
-- (C) follow consistent naming Convention
-- (R) always create a README file
-- (A) Avoid nested projects whenever possible  
-- (F) Favor branching over forking
-- (T) follow folder struture Template whenever possible
+- (C) follow consistent naming `C`onvention
+- (R) always create a `R`EADME file
+- (A) `A`void nested projects whenever possible  
+- (F) `F`avor branching over forking
+- (T) follow folder struture `T`emplate whenever possible
 
 ***********************************************************************
 
@@ -36,6 +36,8 @@ RWD2E (Real World Data To Evidence) is a open research group focusing on data-ce
 - `dep/`: include all dependencies 
 - `<a-proj-xxx-xxx>/`: sub-project folder, user-defined structure. `xxx-xxx` for short labels describing the project (should only include lower-case letters, numbers and hyphen)
 - `.gitignore` file: list of blobs for git to ignore, which can be any file or folder with sensitive information or only need to be used locally. Should at least include `.*/`, `data/*`
+
+*Repo structure style follows [GitHub Repository Structure Best Practices](https://soulaimanghanem.medium.com/github-repository-structure-best-practices-248e6effc405) (Ghanem, 2021)*
 
 ****************************************************************************
 
@@ -92,5 +94,5 @@ References:
 
 ***********************************************************************************
 
-*Share and Enjoy according to the terms of the MIT Open Source License*</br>
-*Repo structure style follows [GitHub Repository Structure Best Practices](https://soulaimanghanem.medium.com/github-repository-structure-best-practices-248e6effc405) (Ghanem, 2021)*
+*Share and Enjoy according to the terms of the MIT Open Source License*
+
