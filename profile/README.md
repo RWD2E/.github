@@ -87,7 +87,8 @@ References:
 - [Git best practices for team collaborations](https://dev.to/jtreeves/git-best-practices-for-team-collaboration-3bf0)
 - [How to undo commits and changes in git](https://www.atlassian.com/git/tutorials/undoing-changes)
 - [More about version controls with git & github](https://github.com/Missouri-BMI/NextGen_Cloud_Architecture_AWS/wiki/Version_Control)
-- [Git houskeepin tutorial](https://railsware.com/blog/git-housekeeping-tutorial-clean-up-outdated-branches-in-local-and-remote-repositories/)
+- [Git housekeeping tutorial](https://railsware.com/blog/git-housekeeping-tutorial-clean-up-outdated-branches-in-local-and-remote-repositories/)
+- [Best Practice for repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories)
 
 ***********************************************************************************
 
