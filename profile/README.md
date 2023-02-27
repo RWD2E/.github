@@ -5,10 +5,10 @@ RWD2E (Real World Data To Evidence) is a open research group focusing on data-ce
 ***********************************************************************
 
 # Consistent Naming Convention
-- (L) only use Lower case;
+- (L) only use <l>L</l>ower case;
 - (O) elements should be Ordered from general to specific detail of importance as much as possible;
 - (A) Abbreviate the content of elements whenever possible;
-- (D) use the underscore (_) as element Delimiter, hyphen (-) to Delimit words within an element or capitalize the first letter of each word within an element;
+- (D) use the underscore (_) as element Delimiter, hyphen (-) to Delimit words within an element or capitalize the first letter of each word within an element (only when hyphen is not allowed);
 - (S) Start with a `noun` for cohort identification scripts (e.g., als-case.sql), start with a verb for analytic scripts (e.g., extract.R)
 
 ***********************************************************************
