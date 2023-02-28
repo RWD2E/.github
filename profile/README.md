@@ -9,7 +9,7 @@ RWD2E (Real World Data To Evidence) is a open research group focusing on data-ce
 - (O) elements should be `O`rdered from general to specific detail of importance as much as possible;
 - (A) `A`bbreviate the content of elements whenever possible;
 - (D) use the underscore (_) as element `D`elimiter, hyphen (-) to `D`elimit words within an element or capitalize the first letter of each word within an element (only when hyphen is not allowed);
-- (S) `S`tart with a `noun` for cohort identification scripts (e.g., als-case.sql), start with a verb for analytic scripts (e.g., extract.R)
+- (S) `S`tart with a **noun** for cohort identification scripts (e.g., als-case.sql), `S`tart with a **verb** for analytic scripts (e.g., extract.R)
 
 ***********************************************************************
 
