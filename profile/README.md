@@ -66,17 +66,17 @@ Please follow the git collaboration best practice described below to manage your
 4. Please refer to the git command order below to properly exercise version controls in a collaborative setting in different scenarios: 
 
 ## When you begin coding for a project   
-![git-workflow-start-project](res/img//git-workflow-start-project.png)
+![git-workflow-start-project](/res/img/git-workflow-start-project.png)
 
 ## When you continue coding after taking a break
-![git-workflow-continue-project](res/img/git-workflow-continue-project.png)
+![git-workflow-continue-project](/res/img/git-workflow-continue-project.png)
 
 ## When you continue coding after making a pull request
-![git-workflow-premature-pull](res/img/git-workflow-premature-pull.png)
+![git-workflow-premature-pull](/res/img/git-workflow-premature-pull.png)
 - [github pull request review best practice](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
 
 ## When you want to merge your branch into main
-![git-workflow-merge-pull](res/img/git-workflow-merge-pull.png)
+![git-workflow-merge-pull](/res/img/git-workflow-merge-pull.png)
 
 *************************************************************************************
 # Tips and Tricks
