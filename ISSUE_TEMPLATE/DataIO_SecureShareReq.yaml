@@ -12,7 +12,6 @@ body:
         This form is for requesting secure share de-identified tables/views from a **identified** to a **de-identified** snowflake server.  
         Please complete all required fields to ensure regulatory and security compliance.
 
-  ## Requester Information
   - type: input
     id: requester
     attributes:
@@ -29,7 +28,6 @@ body:
     validations:
       required: true
 
-  ## Project Information
   - type: textarea
     id: project_info
     attributes:
@@ -38,7 +36,6 @@ body:
     validations:
       required: true
 
-  ## Data Source Informtion (identified server)
   - type: input
     id: source_database
     attributes:
@@ -64,7 +61,6 @@ body:
     validations:
       required: true
 
-  ## Data Target Information (de-identified server)
   - type: input
     id: target_database
     attributes:
@@ -87,7 +83,6 @@ body:
       label: "Target Table Names" 
       placeholder: "Specify if tables should retain names or be renamed. For renaming, specify as source_table -> target_table for each table"
 
-  ## Compliance Checks
   - type: textarea
     id: deidentification_steps
     attributes:
