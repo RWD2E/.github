@@ -1,0 +1,98 @@
+name: "Secure Data Share Request (Identified → De-Identified Server)"
+description: "Request secure share of data from identified server to de-identified snowflake server"
+title: "[Secure Data Share] <Project/Study Title>"
+labels: ["snowshare", "data-deid", "review-needed"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔐 Secure Data Transfer Request  
+        This form is for requesting secure share de-identified tables/views from a **identified** to a **de-identified** snowflake server.  
+        Please complete all required fields to ensure regulatory and security compliance.
+
+  ## Requester Information
+  - type: input
+    id: requester
+    attributes:
+      label: "Requester Name"
+      placeholder: "Your full name"
+    validations:
+      required: true
+
+  - type: input
+    id: requester_email
+    attributes:
+      label: "Requester Email"
+      placeholder: "email@example.edu"
+    validations:
+      required: true
+
+  ## Project Information
+  - type: textarea
+    id: project_info
+    attributes:
+      label: "Project Title"
+      placeholder: "Provide name of the project, which should already be approved to operate"
+    validations:
+      required: true
+
+  ## Data Source Informtion (identified server)
+  - type: input
+    id: source_database
+    attributes:
+      label: "Source Database Name"
+      placeholder: "e.g., GROUSE_ANALYTICS_DB"
+    validations:
+      required: true
+
+  - type: input
+    id: source_schema
+    attributes:
+      label: "Source Schema Name(s)"
+      placeholder: "e.g., SX_ALS_GPC"
+    validations:
+      required: true
+
+  - type: textarea
+    id: source_tables
+    attributes:
+      label: "Source Table(s) or Views to Be Secured Shared"
+      description: "List tables or views that will be securely shared"
+      placeholder: "e.g., DEID_ALS_COHORT,DEID_BC_COHORT,..."
+    validations:
+      required: true
+
+  ## Data Target Information (de-identified server)
+  - type: input
+    id: target_database
+    attributes:
+      label: "Target Database Name"
+      placeholder: "e.g., GROUSE_DEID_ANALYTICS_DB_DROCXXX"
+    validations:
+      required: true
+
+  - type: input
+    id: target_schema
+    attributes:
+      label: "Target Schema Name"
+      placeholder: "Specify if schema should retain name or be renamed. For renaming, specify as source_schema -> target_schema"
+    validations:
+      required: true
+
+  - type: textarea
+    id: target_table
+    attributes:
+      label: "Target Table Names" 
+      placeholder: "Specify if tables should retain names or be renamed. For renaming, specify as source_table -> target_table for each table"
+
+  ## Compliance Checks
+  - type: textarea
+    id: deidentification_steps
+    attributes:
+      label: "De-identification Steps Applied (or Requested)"
+      placeholder: "e.g., all 18 HIPAA identifiers are removed with dates converted to days since an index_date"
+
+
+
