@@ -11,6 +11,7 @@ body:
         ## Secure Data Transfer Request  
         This form is for requesting secure share de-identified tables/views from a **identified** to a **de-identified** snowflake server.  
         Please complete all required fields to ensure regulatory and security compliance.
+  
   - type: input
     id: requester
     attributes:
@@ -18,6 +19,7 @@ body:
       placeholder: "Your full name"
     validations:
       required: true
+  
   - type: input
     id: requester_email
     attributes:
@@ -25,6 +27,7 @@ body:
       placeholder: "email@example.edu"
     validations:
       required: true
+  
   - type: textarea
     id: project_info
     attributes:
@@ -32,6 +35,7 @@ body:
       placeholder: "Provide name of the project, which should already be approved to operate"
     validations:
       required: true
+  
   - type: input
     id: source_database
     attributes:
@@ -39,6 +43,7 @@ body:
       placeholder: "e.g., GROUSE_ANALYTICS_DB"
     validations:
       required: true
+
   - type: input
     id: source_schema
     attributes:
@@ -46,6 +51,7 @@ body:
       placeholder: "e.g., SX_ALS_GPC"
     validations:
       required: true
+
   - type: textarea
     id: source_tables
     attributes:
@@ -54,6 +60,7 @@ body:
       placeholder: "e.g., DEID_ALS_COHORT,DEID_BC_COHORT,..."
     validations:
       required: true
+
   - type: input
     id: target_database
     attributes:
@@ -61,6 +68,7 @@ body:
       placeholder: "e.g., GROUSE_DEID_ANALYTICS_DB_DROCXXX"
     validations:
       required: true
+
   - type: input
     id: target_schema
     attributes:
@@ -68,11 +76,13 @@ body:
       placeholder: "Specify if schema should retain name or be renamed. For renaming, specify as source_schema -> target_schema"
     validations:
       required: true
+
   - type: textarea
     id: target_table
     attributes:
       label: "Target Table Names" 
       placeholder: "Specify if tables should retain names or be renamed. For renaming, specify as source_table -> target_table for each table"
+      
   - type: textarea
     id: deidentification_steps
     attributes:
