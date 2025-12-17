@@ -1,6 +1,6 @@
 name: "Secure Data Share Request (Identified → De-Identified Server)"
 description: "Request secure share of data from identified server to de-identified snowflake server"
-title: "[Secure Data Share] <Project/Study Title>"
+title: "[Secure Data Share] Share multiple tables from id-snowflake to deid-snowflake"
 labels: ["snowshare", "data-deid", "review-needed"]
 assignees: []
 body:
@@ -27,7 +27,7 @@ body:
     validations:
       required: true
   
-  - type: textarea
+  - type: input
     id: project_info
     attributes:
       label: "Project Title"
@@ -51,15 +51,6 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: source_tables
-    attributes:
-      label: "Source Table(s) or Views to Be Secured Shared"
-      description: "List tables or views that will be securely shared"
-      placeholder: "e.g., DEID_ALS_COHORT,DEID_BC_COHORT,..."
-    validations:
-      required: true
-
   - type: input
     id: target_database
     attributes:
@@ -76,12 +67,17 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: target_table
+  - type: table
+    id: source_target_tablename_mapping
     attributes:
-      label: "Target Table Names" 
-      placeholder: "Specify if tables should retain names or be renamed. For renaming, specify as source_table -> target_table for each table"
-      
+      label: Source-to-Target Table Name Mapping
+      description: Provide source and target table name mappings.Add as many rows as needed.
+      columns:
+        - name: source_table
+          label: Source Table Name
+        - name: target_table
+          label: Target Table Name
+
   - type: textarea
     id: deidentification_steps
     attributes:
