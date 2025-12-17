@@ -73,11 +73,13 @@ body:
       label: "Source-to-Target Table Name Mapping"
       description: "One mapping per line"
       placeholder: "source_table_name -> target_table_name"
-      validations:
-        required: false
+    validations:
+      required: true
       
   - type: textarea
     id: deidentification_steps
     attributes:
       label: "De-identification Steps Applied (or Requested)"
       placeholder: "e.g., all 18 HIPAA identifiers are removed with dates converted to days since an index_date"
+    validations:
+      required: false
