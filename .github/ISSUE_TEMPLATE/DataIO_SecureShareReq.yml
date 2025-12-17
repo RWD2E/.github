@@ -3,7 +3,6 @@ description: "Request secure share of data from identified server to de-identifi
 title: "[Secure Data Share] <Project/Study Title>"
 labels: ["snowshare", "data-deid", "review-needed"]
 assignees: []
-
 body:
   - type: markdown
     attributes:
