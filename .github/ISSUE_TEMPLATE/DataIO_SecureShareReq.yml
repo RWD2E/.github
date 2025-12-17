@@ -14,7 +14,7 @@ body:
   - type: input
     id: requester
     attributes:
-      label: "Requester Name"
+      label: "## Requester Name"
       placeholder: "Your full name"
     validations:
       required: true
@@ -22,7 +22,7 @@ body:
   - type: input
     id: requester_email
     attributes:
-      label: "Requester Email"
+      label: "## Requester Email"
       placeholder: "email@example.edu"
     validations:
       required: true
@@ -30,15 +30,23 @@ body:
   - type: input
     id: project_info
     attributes:
-      label: "Project Title"
+      label: "## Project Title"
       placeholder: "Provide name of the project, which should already be approved to operate"
     validations:
       required: true
-  
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: "## Reason for Secure Share"
+      placeholder: "Provide reasons for sharing data from identified server"
+    validations:
+      required: true
+
   - type: input
     id: source_database
     attributes:
-      label: "Source Database Name"
+      label: "## Source Database Name"
       placeholder: "e.g., GROUSE_ANALYTICS_DB"
     validations:
       required: true
@@ -46,7 +54,7 @@ body:
   - type: input
     id: source_schema
     attributes:
-      label: "Source Schema Name(s)"
+      label: "## Source Schema Name(s)"
       placeholder: "e.g., SX_ALS_GPC"
     validations:
       required: true
@@ -54,7 +62,7 @@ body:
   - type: input
     id: target_database
     attributes:
-      label: "Target Database Name"
+      label: "## Target Database Name"
       placeholder: "e.g., GROUSE_DEID_ANALYTICS_DB_DROCXXX"
     validations:
       required: true
@@ -62,7 +70,7 @@ body:
   - type: input
     id: target_schema
     attributes:
-      label: "Target Schema Name"
+      label: "## Target Schema Name"
       placeholder: "Specify if schema should retain name or be renamed. For renaming, specify as source_schema -> target_schema"
     validations:
       required: true
@@ -70,9 +78,9 @@ body:
   - type: textarea
     id: source_target_tablename_mapping
     attributes:
-      label: "Source-to-Target Table Name Mapping"
-      description: "One mapping per line"
-      placeholder: "source_table_name -> target_table_name"
+      label: "## Source-to-Target Table Name Mapping"
+      description: "One mapping per line with complete path to table"
+      placeholder: "source_db_name.source_schema_name.source_table_name -> target_db_name.target_schema_name.target_table_name"
     validations:
       required: true
       
