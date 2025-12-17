@@ -67,17 +67,17 @@ body:
     validations:
       required: true
 
-  - type: table
+  - type: textarea
     id: source_target_tablename_mapping
     attributes:
       label: Source-to-Target Table Name Mapping
-      description: Provide source and target table name mappings. Add as many rows as needed.
-      columns:
-        - name: source_table
-          label: Source Table Name
-        - name: target_table
-          label: Target Table Name
-
+      description: >
+        One mapping per line: source_table -> target_table
+      placeholder: |
+        deid_table -> deid_table
+      validations:
+        required: false
+      
   - type: textarea
     id: deidentification_steps
     attributes:
