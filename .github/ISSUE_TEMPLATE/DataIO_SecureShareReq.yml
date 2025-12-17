@@ -70,12 +70,11 @@ body:
   - type: textarea
     id: source_target_tablename_mapping
     attributes:
-      label: Source-to-Target Table Name Mapping
-      description: One mapping per line
-      placeholder: |
-        source_table_name -> target_table_name
+      label: "Source-to-Target Table Name Mapping"
+      description: "One mapping per line"
+      placeholder: "source_table_name -> target_table_name"
       validations:
-        required: true
+        required: false
       
   - type: textarea
     id: deidentification_steps
